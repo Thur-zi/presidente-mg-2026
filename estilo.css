@@ -1,0 +1,62 @@
+/* Quadro comparativo Presidente 2022 × 2026 — complementa base.css (identidade MOBI dos resultados) */
+section{margin:26px 0}
+section > h3{font:700 22px/1.2 var(--display);color:var(--fg);text-transform:none;letter-spacing:-.01em;margin:0 0 14px}
+.controles{gap:12px}
+.buscas{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:4px 0 10px}
+.busca.grande{flex:1 1 320px;min-width:260px}
+.busca.grande input{font-size:15px}
+.chip-dep{display:inline-flex;align-items:center;gap:8px;background:rgba(85,184,230,.14);border:1px solid rgba(85,184,230,.5);color:var(--fg);border-radius:999px;padding:6px 8px 6px 14px;font-weight:600}
+.chip-dep button{background:rgba(255,255,255,.12);border:0;border-radius:50%;width:22px;height:22px;color:#fff}
+.anos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.anos{grid-template-columns:1fr}}
+.ano{padding:18px}
+.ano h4{margin:0 0 10px;font:700 16px var(--display);color:var(--kicker);letter-spacing:.04em;text-transform:uppercase}
+.cand{display:grid;grid-template-columns:40px 1fr auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--border)}
+.cand:last-child{border-bottom:0}
+.cand .av{width:40px;height:52px;border-radius:8px;object-fit:cover;background:#0d1217;display:grid;place-items:center;font:700 14px var(--display);color:#0b1a24}
+.cand .n{font-weight:700}.cand .n small{display:block;color:var(--faint);font-weight:500;font-size:12px}
+.cand .b{height:6px;border-radius:3px;background:rgba(255,255,255,.07);margin-top:5px;overflow:hidden}
+.cand .b i{display:block;height:100%}
+.cand .v{text-align:right;font-variant-numeric:tabular-nums}
+.cand .v b{display:block;font:700 18px/1 var(--display)}
+.cand .v small{color:var(--muted);font-size:12px}
+.delta{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:14px}
+.delta .card{padding:14px 16px}
+.delta .l{color:var(--muted);font-size:12.5px}
+.delta .v{font:700 22px/1.2 var(--display);margin-top:4px;font-variant-numeric:tabular-nums}
+.delta .s{color:var(--faint);font-size:12.5px}
+.pos{color:#4fd18b}.neg{color:#ff7a6b}
+td.pos,td.neg{font-weight:700}
+.venc{display:inline-flex;align-items:center;gap:6px}
+.venc i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.virou{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--warn);color:#0b1a24;border-radius:5px;padding:2px 6px;margin-left:6px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.grid2{grid-template-columns:1fr}}
+.metodo{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px 18px;color:var(--muted);font-size:14px}
+.metodo p{margin:0 0 8px}
+#detalhe .card,#depSec .card{padding:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-bottom:14px}
+.kpis .card{padding:12px 14px}
+.kpis b{display:block;font:700 22px/1.2 var(--display)}
+.kpis span{font-size:12.5px;color:var(--muted)}
+.leaflet-container{background:#0b1015}
+section{scroll-margin-top:120px}
+.ferr{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.ferr h3{flex:1 1 auto;font:700 22px/1.2 var(--display);text-transform:none;letter-spacing:-.01em;color:var(--fg)}
+.ferr .busca{flex:0 1 280px}
+.delta .v.txt{font-size:17px}
+#tabela tbody tr{cursor:pointer}
+#tabela tbody tr:hover td{background:rgba(85,184,230,.06)}
+#modoMapa{margin-bottom:10px}
+.card h3{text-transform:none;letter-spacing:0;color:var(--fg);line-height:1.3;font-weight:700}
+h4.sub{font:700 16px/1.3 var(--display);color:var(--fg);margin:20px 0 10px}
+h4.sub small{font:500 12.5px var(--sans,inherit);color:var(--faint);margin-left:8px}
+ol.top{list-style:none;margin:0;padding:0;counter-reset:t}
+ol.top li{counter-increment:t;border-bottom:1px solid var(--border)}
+ol.top li:last-child{border-bottom:0}
+ol.top button{display:flex;width:100%;gap:10px;align-items:center;background:none;border:0;padding:7px 4px;color:var(--fg);text-align:left;border-radius:8px}
+ol.top button:hover{background:rgba(85,184,230,.08)}
+ol.top button::before{content:counter(t);width:22px;color:var(--faint);font-variant-numeric:tabular-nums;font-size:12.5px}
+ol.top span{flex:1}ol.top small{color:var(--faint);font-size:12px}
+ol.top b{font-variant-numeric:tabular-nums}
+@media (max-width:700px){.controles{position:static}}
